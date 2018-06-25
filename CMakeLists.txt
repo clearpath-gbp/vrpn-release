@@ -353,7 +353,7 @@ option_requires(VRPN_BUILD_PYTHON_HANDCODED_3X
 ###
 # javac, jar, and javah (for java wrapper)
 ###
-if(ANDROID AND DEFINED find_host_package)
+if(ANDROID)
 	find_host_package(Java COMPONENTS Development)
 	find_host_package(JNI)
 	find_host_program(JAVAH_EXECUTABLE NAMES javah)
@@ -547,7 +547,7 @@ option_requires(VRPN_USE_JSONNET
 
 if(VRPN_USE_JSONNET)
 	include_directories(BEFORE ${JSONCPP_INCLUDE_DIRS})
-	list(APPEND SERVER_EXTRA_LIBS ${JSONCPP_LIBRARY})
+	list(APPEND SERVER_EXTRA_LIBS ${JSONCPP_LIBRARIES})
 else()
 	set(JSONCPP_SOURCES)
 endif()
@@ -807,7 +807,7 @@ option(VRPN_USE_PDI
 	"Build with flags to enable the use of Polhemus DVI library."
 	OFF)
 if(VRPN_USE_PDI)
-	find_path(POLHEMUS_PDI_DIR NAMES "Inc" "Lib" PATH_SUFFIXES "PDI_140" "PDI_110" "PDI_90" PATHS "C:/Polhemus/PDI" "C:/Program Files (x86)/Polhemus/PDI" NO_DEFAULT_PATH)
+	find_path(POLHEMUS_PDI_DIR NAMES "Inc" "Lib" PATH_SUFFIXES "PDI_110" "PDI_90" PATHS "C:/Program Files (x86)/Polhemus/PDI" NO_DEFAULT_PATH)
 	include_directories(${POLHEMUS_PDI_DIR}/Inc)
 	if(CMAKE_SIZEOF_VOID_P EQUAL 8)
 		list(APPEND SERVER_EXTRA_LIBS "${POLHEMUS_PDI_DIR}/Lib/x64/PDI.lib")

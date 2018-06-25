@@ -9,7 +9,10 @@
 // of others.  In future versions, if NTSTATUS is located by
 // the compiler then we can remove this definition.
 
-#include "submodules/hidapi/windows/hid.cpp"
+#ifndef NTSTATUS
+typedef long NTSTATUS;
+#endif
+#include "submodules/hidapi/windows/hid.c"
 
 #pragma comment( lib, "Setupapi.lib" )
 
