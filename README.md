@@ -1,3 +1,26 @@
+## vrpn (melodic) - 7.33.1-0
+
+The packages in the `vrpn` repository were released into the `melodic` distro by running `/usr/local/bin/bloom-release -t melodic -r melodic vrpn` on `Mon, 25 Jun 2018 17:42:15 -0000`
+
+The `vrpn` package was released.
+
+Version of package(s) in repository `vrpn`:
+
+- upstream repository: https://github.com/vrpn/vrpn.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `7.33.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.5`
+- catkin_pkg version: `0.4.3`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## vrpn (lunar) - 7.33.1-5
 
 The packages in the `vrpn` repository were released into the `lunar` distro by running `/usr/local/bin/bloom-release -r lunar -t lunar vrpn` on `Thu, 30 Nov 2017 04:59:08 -0000`
