@@ -1,3 +1,26 @@
+## vrpn (noetic) - 7.34.0-2
+
+The packages in the `vrpn` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic vrpn` on `Mon, 01 Feb 2021 20:49:49 -0000`
+
+The `vrpn` package was released.
+
+Version of package(s) in repository `vrpn`:
+
+- upstream repository: https://github.com/vrpn/vrpn.git
+- release repository: https://github.com/ros-drivers-gbp/vrpn-release.git
+- rosdistro version: `7.34.0-1`
+- old version: `7.34.0-1`
+- new version: `7.34.0-2`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## vrpn (noetic) - 7.34.0-1
 
 The packages in the `vrpn` repository were released into the `noetic` distro by running `/usr/bin/bloom-release vrpn -r noetic -t noetic` on `Fri, 18 Dec 2020 15:58:09 -0000`
